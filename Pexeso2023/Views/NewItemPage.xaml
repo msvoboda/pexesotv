@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PexesoTv.Views.NewItemPage" Title="New Item">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked">
+        </ToolbarItem>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Hrač 1:" FontSize="Medium" />
+            <Entry Text="{Binding Player1.Name}" FontSize="Small" />
+            <Label Text="Hráč 2:" FontSize="Medium" />
+            <Editor Text="{Binding Player2.Name}" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

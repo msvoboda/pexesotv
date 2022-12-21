@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:my="clr-namespace:PexesoTv.Components" x:Class="PexesoTv.Views.GamePage" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+     
+        <Frame VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" CornerRadius="0">
+            <Frame.Background>
+                <!-- StartPoint defaults to (0,0) -->
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="LightGray"
+                              Offset="0.1" />
+                    <GradientStop Color="White"
+                              Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid Margin="2,2,2,2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="2" ColumnSpacing="2">
+           <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />  
+                <RowDefinition Height="32" />  
+            </Grid.RowDefinitions> 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="20*" />
+                <ColumnDefinition Width="20*" />
+            </Grid.ColumnDefinitions>
+           
+            <!-- 0 -->
+            <my:CartView x:Name="pictureCartA1" ></my:CartView>
+            <my:CartView x:Name="pictureCartA2" Grid.Column="1" />
+            <my:CartView x:Name="pictureCartA3" Grid.Column="2"  />
+            <my:CartView x:Name="pictureCartA4" Grid.Column="3"  />
+            <my:CartView x:Name="pictureCartA5" Grid.Column="4"  />
+            <my:CartView x:Name="pictureCartA6" Grid.Column="5" />
+
+            <!-- 1 -->
+            <my:CartView x:Name="pictureCartB1" Grid.Row="1" />
+            <my:CartView x:Name="pictureCartB2" Grid.Row="1"  Grid.Column="1" />
+
+            <my:CartView x:Name="pictureCartB3" Grid.Row="1" Grid.Column="2"/>
+            
+            <my:CartView x:Name="pictureCartB4"
+             Grid.Row="1"
+             Grid.Column="3" />
+            
+            <my:CartView x:Name="pictureCartB5" 
+             Grid.Row="1"
+             Grid.Column="4" />
+            
+             <my:CartView x:Name="pictureCartB6" 
+             Grid.Row="1"
+             Grid.Column="5" />
+            
+
+             <!-- 2 -->
+            <my:CartView x:Name="pictureCartC1"           
+             Grid.Row="2" />
+
+            <my:CartView x:Name="pictureCartC2" 
+             Grid.Row="2"
+             Grid.Column="1" />
+            
+            <my:CartView x:Name="pictureCartC3" 
+             Grid.Row="2"
+             Grid.Column="2" />
+            
+            <my:CartView x:Name="pictureCartC4" 
+             Grid.Row="2"
+             Grid.Column="3" />
+            
+            <my:CartView x:Name="pictureCartC5" 
+             Grid.Row="2"
+             Grid.Column="4" />
+
+            <my:CartView x:Name="pictureCartC6" 
+             Grid.Row="2"
+             Grid.Column="5" />
+
+            <!-- 3 -->
+            <my:CartView x:Name="pictureCartD1"           
+             Grid.Row="3" />
+
+            <my:CartView x:Name="pictureCartD2" 
+             Grid.Row="3"
+             Grid.Column="1" />
+            
+            <my:CartView x:Name="pictureCartD3" 
+             Grid.Row="3"
+             Grid.Column="2" />
+            
+            <my:CartView x:Name="pictureCartD4" 
+             Grid.Row="3"
+             Grid.Column="3" />
+            
+            <my:CartView x:Name="pictureCartD5" 
+             Grid.Row="3"
+             Grid.Column="4" />
+            
+             <my:CartView x:Name="pictureCartD6" 
+             Grid.Row="3"
+             Grid.Column="5" />
+         
+            
+             <!-- 4 -->
+            <my:CartView x:Name="pictureCartE1"           
+             Grid.Row="4" />
+
+            <my:CartView x:Name="pictureCartE2" 
+             Grid.Row="4"
+             Grid.Column="1" />
+            
+            <my:CartView x:Name="pictureCartE3" 
+             Grid.Row="4"
+             Grid.Column="2" />
+            
+            <my:CartView x:Name="pictureCartE4" 
+             Grid.Row="4"
+             Grid.Column="3" />
+            
+            <my:CartView x:Name="pictureCartE5" 
+             Grid.Row="4"
+             Grid.Column="4" />
+
+            <my:CartView x:Name="pictureCartE6" 
+             Grid.Row="4"
+             Grid.Column="5" />
+
+            <!-- 5 -->
+            <my:CartView x:Name="pictureCartF1"           
+             Grid.Row="5" />
+
+            <my:CartView x:Name="pictureCartF2" 
+             Grid.Row="5"
+             Grid.Column="1" />
+            
+            <my:CartView x:Name="pictureCartF3" 
+             Grid.Row="5"
+             Grid.Column="2" />
+            
+            <my:CartView x:Name="pictureCartF4" 
+             Grid.Row="5"
+             Grid.Column="3" />
+            
+            <my:CartView x:Name="pictureCartF5" 
+             Grid.Row="5"
+             Grid.Column="4" />
+            
+             <my:CartView x:Name="pictureCartF6" 
+             Grid.Row="5"
+             Grid.Column="5" />
+            
+            
+            <Label TextColor="{Binding Player1.Color}"  FontSize="Medium" VerticalOptions="End" HorizontalOptions="Start" Text="{Binding Player1.Text}" Grid.Row="6" Grid.Column="2"/>
+                <Label TextColor="{Binding Player2.Color}"  FontSize="Medium" VerticalOptions="End" HorizontalOptions="End" Text="{Binding Player2.Text}" Grid.Column="3" Grid.Row="6" />
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:PexesoTv.ViewModels"  x:Class="PexesoTv.Views.ItemsPage" Title="{Binding Title}" x:Name="BrowseItemsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>            
+            <!--Page Level Resources: Compatibile with Xamarin Live Player -->          
+            <Color x:Key="bgColor">#96d1ff</Color>           
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout BackgroundColor="{StaticResource Key=bgColor}">
+        <RefreshView>
+            <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="Single" SelectedItem="{Binding SelectedGame}" SelectionChangedCommand="{Binding SelectedChangedCommand}">
+                <CollectionView.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="White"
+                          Offset="0.0" />
+                        <GradientStop Color="CornflowerBlue"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </CollectionView.Background>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <Image Source="{Binding Image}" WidthRequest="128" HeightRequest="128"></Image>
+                            <StackLayout Padding="10" VerticalOptions="FillAndExpand">
+                                <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </StackLayout>
+</ContentPage>

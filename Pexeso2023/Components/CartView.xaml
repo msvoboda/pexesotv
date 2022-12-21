@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PexesoTv.Components.CartView" >
+    <ContentView.Content>
+        <Grid>
+        <Frame BackgroundColor="White" BorderColor="Black" Padding="0">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0">
+                <Image x:Name="image" Source="{Binding Image}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFit"></Image>
+                <Image x:Name="imageHand" Source="hand.jpg" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="18" HeightRequest="18" IsVisible="{Binding IsSelected}"></Image>
+                    <!--<Label Text="{Binding Image}"></Label>-->
+                </Grid>
+        </Frame>
+            
+        <Frame BackgroundColor="{Binding CartColor}" BorderColor="Black" CornerRadius="4"  IsVisible="{Binding IsVisible}" x:Name="pictureCart">            
+
+        </Frame>
+           
+        </Grid>
+    </ContentView.Content>
+</ContentView>
