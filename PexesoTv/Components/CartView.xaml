@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PexesoTv.Components.CartView" >
+    <ContentView.Content>
+        <Grid>          
+             <Image x:Name="image" Source="{Binding Image}" WidthRequest="128" HeightRequest="128"></Image>          
+            <BoxView x:Name="pictureCart" Color="{Binding CartColor}" IsVisible="{Binding IsVisible}"          
+             VerticalOptions="FillAndExpand"                  
+             HorizontalOptions="FillAndExpand" />
+            <Image x:Name="imageHand" Source="hand.jpg" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="18" HeightRequest="18" IsVisible="{Binding IsSelected}"></Image>          
+         </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9AA2D3C6-3393-45F1-8E7C-5A9901728795}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PexesoTv.Droid</RootNamespace>
+    <AssemblyName>PexesoTv.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidSupportedAbis>armeabi-v7a;x86_64;x86;arm64-v8a</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ButtonMapping.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\minecraft.png" />
+    <AndroidResource Include="Resources\drawable\mario.png" />
+    <AndroidResource Include="Resources\drawable\lego.png" />
+    <AndroidResource Include="Resources\drawable\img1.jpg" />
+    <AndroidResource Include="Resources\drawable\img2.jpg" />
+    <AndroidResource Include="Resources\drawable\img3.jpg" />
+    <AndroidResource Include="Resources\drawable\img4.jpg" />
+    <AndroidResource Include="Resources\drawable\img5.jpg" />
+    <AndroidResource Include="Resources\drawable\img6.png" />
+    <AndroidResource Include="Resources\drawable\img7.jpg" />
+    <AndroidResource Include="Resources\drawable\img8.jpg" />
+    <AndroidResource Include="Resources\drawable\img9.jpg" />
+    <AndroidResource Include="Resources\drawable\img10.png" />
+    <AndroidResource Include="Resources\drawable\img11.jpg" />
+    <AndroidResource Include="Resources\drawable\img12.png" />
+    <AndroidResource Include="Resources\drawable\img13.png" />
+    <AndroidResource Include="Resources\drawable\img14.png" />
+    <AndroidResource Include="Resources\drawable\img15.png" />
+    <AndroidResource Include="Resources\drawable\img16.png" />
+    <AndroidResource Include="Resources\drawable\img17.png" />
+    <AndroidResource Include="Resources\drawable\img18.jpg" />
+    <AndroidResource Include="Resources\drawable\img19.jpg" />
+    <AndroidResource Include="Resources\drawable\img20.png" />
+    <AndroidResource Include="Resources\drawable\img21.jpg" />
+    <AndroidResource Include="Resources\drawable\img22.jpg" />
+    <AndroidResource Include="Resources\drawable\img23.jpg" />
+    <AndroidResource Include="Resources\drawable\img24.png" />
+    <AndroidResource Include="Resources\drawable\car1.png" />
+    <AndroidResource Include="Resources\drawable\car2.jpg" />
+    <AndroidResource Include="Resources\drawable\car3.jpg" />
+    <AndroidResource Include="Resources\drawable\car4.jpg" />
+    <AndroidResource Include="Resources\drawable\car5.png" />
+    <AndroidResource Include="Resources\drawable\car6.jpg" />
+    <AndroidResource Include="Resources\drawable\car7.jpg" />
+    <AndroidResource Include="Resources\drawable\car8.png" />
+    <AndroidResource Include="Resources\drawable\car9.png" />
+    <AndroidResource Include="Resources\drawable\car10.jpg" />
+    <AndroidResource Include="Resources\drawable\car11.jpg" />
+    <AndroidResource Include="Resources\drawable\car12.jpg" />
+    <AndroidResource Include="Resources\drawable\car13.jpg" />
+    <AndroidResource Include="Resources\drawable\car14.jpg" />
+    <AndroidResource Include="Resources\drawable\car15.jpg" />
+    <AndroidResource Include="Resources\drawable\car16.jpg" />
+    <AndroidResource Include="Resources\drawable\car17.png" />
+    <AndroidResource Include="Resources\drawable\car18.jpg" />
+    <AndroidResource Include="Resources\drawable\car19.jpg" />
+    <AndroidResource Include="Resources\drawable\car20.jpg" />
+    <AndroidResource Include="Resources\drawable\car21.jpg" />
+    <AndroidResource Include="Resources\drawable\car22.jpg" />
+    <AndroidResource Include="Resources\drawable\car23.png" />
+    <AndroidResource Include="Resources\drawable\car24.jpg" />
+    <AndroidResource Include="Resources\drawable\car.png" />
+    <AndroidResource Include="Resources\drawable\mar1.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar3.png" />
+    <AndroidResource Include="Resources\drawable\mar4.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar5.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar6.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar7.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar8.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar9.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar10.png" />
+    <AndroidResource Include="Resources\drawable\mar11.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar12.png" />
+    <AndroidResource Include="Resources\drawable\mar13.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar14.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar15.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar16.png" />
+    <AndroidResource Include="Resources\drawable\mar17.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar18.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar19.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar20.png" />
+    <AndroidResource Include="Resources\drawable\mar21.jpeg" />
+    <AndroidResource Include="Resources\drawable\mar2.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\pexeso.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\pexeso.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\pexeso.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\pexeso.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\pexeso.png" />
+    <AndroidResource Include="Resources\drawable\pexeso.png" />
+    <AndroidResource Include="Resources\drawable\lego1.jpg" />
+    <AndroidResource Include="Resources\drawable\lego2.png" />
+    <AndroidResource Include="Resources\drawable\lego3.jpg" />
+    <AndroidResource Include="Resources\drawable\lego4.png" />
+    <AndroidResource Include="Resources\drawable\lego5.jpg" />
+    <AndroidResource Include="Resources\drawable\lego6.jpg" />
+    <AndroidResource Include="Resources\drawable\lego7.jpg" />
+    <AndroidResource Include="Resources\drawable\lego8.jpg" />
+    <AndroidResource Include="Resources\drawable\lego9.png" />
+    <AndroidResource Include="Resources\drawable\lego10.jpg" />
+    <AndroidResource Include="Resources\drawable\lego11.png" />
+    <AndroidResource Include="Resources\drawable\lego12.jpg" />
+    <AndroidResource Include="Resources\drawable\lego13.jpg" />
+    <AndroidResource Include="Resources\drawable\lego14.jpg" />
+    <AndroidResource Include="Resources\drawable\lego15.jpg" />
+    <AndroidResource Include="Resources\drawable\lego16.jpg" />
+    <AndroidResource Include="Resources\drawable\lego17.jpg" />
+    <AndroidResource Include="Resources\drawable\lego18.jpg" />
+    <AndroidResource Include="Resources\drawable\lego19.jpg" />
+    <AndroidResource Include="Resources\drawable\lego20.jpg" />
+    <AndroidResource Include="Resources\drawable\lego21.jpg" />
+    <AndroidResource Include="Resources\drawable\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PexesoTv\PexesoTv.csproj">
+      <Project>{E4380F82-D59B-48F8-91C5-74B36E6BC592}</Project>
+      <Name>PexesoTv</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fortnite24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\starwars21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

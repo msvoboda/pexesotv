@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.104" package="com.svoboda.PexesoTv" android:versionCode="6">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+	<uses-feature android:name="android.hardware.gamepad" android:required="false" />
+	<application android:label="Pexeso TV" android:debuggable="false" android:isGame="true"></application>
+</manifest>
